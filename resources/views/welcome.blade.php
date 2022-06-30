@@ -16,12 +16,12 @@
     <body>
         <div> <x-Navbar/> </div>
         <div>
-        <h1>Promote your Business and Community with Others</h1>
-        <h3>Promote your Business and Community with Others</h3>
+            <h1>Promote your Business and Community with Others</h1>
+            <h3>Promote your Business and Community with Others</h3>
         </div>
         <div>
-            <button>Community</button>
-            <button>Marketplace</button>
+            <button> <a href="{{ route('register') }}"> Community </a></button>
+            <button> <a href="{{ route('register') }}"> Marketplace </a> </button>
         </div>
         <div> <x-Footer/> </div>
     </body>

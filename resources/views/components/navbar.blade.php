@@ -11,7 +11,12 @@
                 <li class="nav-item">
                     @if (Route::has('login'))
                         @auth
-                                <!-- <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a> -->
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <button type="submit" class="">
+                                {{ __('Log Out') }}
+                            </button>
+                        </form>
                             @else
                                 <a href="{{ route('login') }}">Log in</a>
                                 @if (Route::has('register'))
@@ -19,15 +24,20 @@
                                 @endif
                         @endauth
                     @endif
-                    <!-- <a href="#">Log in</a> -->
                 </li>
-                <!-- <li class="nav-item">
-                    <button>Sign up</button>
-                </li> -->
             </ul>
         </li>
     </ul>
 </nav>
+
+
+
+
+
+
+
+
+
 
 <!-- <nav class="navs">
     <ul class="nav-list-top">
