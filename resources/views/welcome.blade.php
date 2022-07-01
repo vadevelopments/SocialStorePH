@@ -22,16 +22,16 @@
             <h1>Promote your Business and Community with Others</h1>
             <h3>Promote your Business and Community with Others</h3>
         </div>
-        <div>
+        <div class="body-btn">
             @if (Route::has('login'))
                 @auth
                     @csrf
-                    <button><a href="#">Community loged in</a></button>
-                    <button><a href="#">Marketplace loged in</a></button>
+                    <button><a href="#">Community</a></button>
+                    <button class="button-1"><a href="#">Marketplace</a></button>
                     @else
-                        <button><a href="{{ route('login') }}">Community Log in first</a></button>
+                        <button><a href="{{ route('login') }}">Community</a></button>
                         @if (Route::has('register'))
-                            <button><a href="{{ route('register') }}">Marketplace Register first</a></button>
+                            <button class="button-1"><a href="{{ route('login') }}">Marketplace</a></button>
                         @endif
                 @endauth
             @endif

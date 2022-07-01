@@ -1,6 +1,5 @@
 
 *, html, body {
-
   margin: 0;
   padding: 0;
 }
@@ -8,16 +7,20 @@
 html{
   height: 100%;
   box-sizing: border-box;
+
+  background-color: #f1f1f1;
+
+  /* background: url('/images/body_background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; */
 }
 
 body{
   font-family: 'Nunito', sans-serif;
-  background-color: antiquewhite;
-  margin: 0;
   display: flex;
   flex-direction: column;  
   min-height: 100%;
-  /* padding-bottom: 1rem; */
   box-sizing: inherit;
 }
 
@@ -173,5 +176,44 @@ div:last-of-type{
 }
 
 .body-1{
-  text-align: justify;
+  margin: 6rem 5rem 1rem 5rem;
+}
+
+.body-1 h1{
+  font-size: 5em;
+  line-height: 5rem;
+  margin-bottom: 1rem;
+}
+
+.body-1 h3{
+  font-size: 3em;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+}
+
+.body-btn{
+  margin: 0 5rem;
+  margin-bottom: 10rem;
+}
+
+.body-btn button{
+  font-size: 2em;
+  margin: 0 3rem 2rem 0;
+  width: 20rem;
+  border-radius: 0;
+  border-color: none;
+}
+
+.button-1{
+  box-sizing: border-box;
+  /* border-style: solid; */
+  background-color: rgba(255, 255, 255, 0.623);
+  /* border-width: 3px 3px 3px 3px; */
+  /* border-color: none; */
+  color: #427898;
+}
+
+.button-1 a{
+  text-decoration: none;
+  color: #427898;
 }
