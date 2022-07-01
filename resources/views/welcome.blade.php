@@ -20,8 +20,18 @@
             <h3>Promote your Business and Community with Others</h3>
         </div>
         <div>
-            <button> <a href="{{ route('register') }}"> Community </a></button>
-            <button> <a href="{{ route('register') }}"> Marketplace </a> </button>
+            @if (Route::has('login'))
+                @auth
+                    @csrf
+                    <button><a href="#">Community loged in</a></button>
+                    <button><a href="#">Marketplace loged in</a></button>
+                    @else
+                        <button><a href="{{ route('login') }}">Community Log in first</a></button>
+                        @if (Route::has('register'))
+                            <button><a href="{{ route('register') }}">Marketplace Register first</a></button>
+                        @endif
+                @endauth
+            @endif
         </div>
         <div> <x-Footer/> </div>
     </body>
