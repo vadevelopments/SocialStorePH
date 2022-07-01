@@ -84,11 +84,6 @@ a, a:link, a:hover, a:active, a:visited{
   color: white;
 }
 
-.nav-leftdiv {
-  display: flex;
-  justify-content: center;
-}
-
 .nav-list-top{
   padding: 0.5rem;
   display: flex;
@@ -110,10 +105,50 @@ a, a:link, a:hover, a:active, a:visited{
   text-align: center;
 }
 
+.nav-icon{
+  margin: 0;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+
+.nav-icon a{
+  margin: 0;
+  color: #B5D2DD;
+}
+
+.nav-search{
+  all: unset;
+  list-style: none;
+  margin-left: auto;
+  border-radius: 5rem;
+  padding: 3px 6px;
+  background: #f1f1f1;
+  text-align: left;
+  padding-left: 0.7rem;
+}
+
+.searchContainer {
+  display: inline-flex;
+  flex: 1 1 300px;
+  position: relative;
+  background-color: #f1f1f1;
+  border-radius: 5rem;
+  overflow: hidden;
+}
+
+.searchIcon {
+  padding: 0.5rem;
+}
+
+.li-search{
+  margin-left: auto;
+  flex: inline;
+}
+
 .li-last{
   margin-left: auto;
-  flex: inline; 
-  justify-content: space-around;
+  flex: inline;
+  justify-content: center;
 }
 
 .li-last a{
@@ -127,24 +162,6 @@ a, a:link, a:hover, a:active, a:visited{
   margin-left: 0;
 }
 
-
-/* .p1{
-  padding-left: 1rem;
-} */
-/* .nav-item > a{
-margin: 0 0.5rem;
-} */
-
-/* .nav-item:nth-child(3){
-  margin-left: auto;
-  flex: inline;
-}
-
-.nav-item:nth-child(4){
-  margin-left: auto;
-  flex: inline;
-} */
-
 div:last-of-type{
   margin-top: auto;
 }
@@ -153,4 +170,8 @@ div:last-of-type{
   border-right: 2px solid white;
   height: 2rem;
   padding-right: 1rem;
+}
+
+.body-1{
+  text-align: justify;
 }

@@ -8,14 +8,17 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
+        
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
         <!-- Styles -->
         <link rel="stylesheet" href="css/app.css">
 
     </head>
     <body>
         <div> <x-Navbar/> </div>
-        <div>
+        <div class="body-1">
             <h1>Promote your Business and Community with Others</h1>
             <h3>Promote your Business and Community with Others</h3>
         </div>
